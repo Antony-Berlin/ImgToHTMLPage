@@ -17,7 +17,7 @@ The HTML Image Renderer is a web application that takes an image as input and co
 
 1. Clone the repository to your local machine or set up the web application on a server.
 
-2. Install Tesseract.js by running the following command:'npm install tesseract.js'
+2. Install Tesseract.js by running the following command: `npm install tesseract.js`
 
 3. Access the application using a web browser.
 
