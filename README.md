@@ -27,8 +27,8 @@ The HTML Image Renderer is a web application that takes an image as input and co
 
 To test the HTML Image Renderer application, you can upload the "example.jpg" image provided in the "examples" folder. Click on the "Run" button to process the image and see the rendered HTML output.
 
-![example input](examples\example.jpg)
-![example output](examples\example_out.jpg)
+![example input](examples/example.jpg)
+![example output](examples/example_out.jpg)
 
 ## Dependencies
 
