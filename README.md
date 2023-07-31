@@ -4,15 +4,6 @@
 
 The HTML Image Renderer is a web application that takes an image as input and converts it into HTML code, rendering the HTML representation of the image in real-time. The application allows users to upload an image, process it, and display the corresponding HTML code and rendered output in a user-friendly interface.
 
-## Features
-
-- Upload Image: Users can upload an image from their local system using the "Upload Image" button.
-- Image Processing: The uploaded image is processed using advanced image recognition techniques to extract the handwritten or typed text content.
-- HTML Conversion: The recognized text content is converted into valid HTML code, replicating the image's content structure.
-- Real-time Rendering: The generated HTML code is instantly rendered and displayed in the "HTML Render" section of the application.
-- User-Friendly Interface: The application offers a simple and intuitive user interface, making it easy for users to interact with the tool.
-- Efficiency: The image processing and HTML conversion are optimized to ensure quick results even for large images.
-
 ## How to Use
 
 1. Clone the repository to your local machine or set up the web application on a server.
@@ -30,6 +21,14 @@ The HTML Image Renderer is a web application that takes an image as input and co
 7. Once the conversion is completed, the HTML code will be displayed in the "HTML Render" section of the application.
 
 8. If you encounter any issues or have suggestions for improvement, feel free to report them in the "Issues" section of the project repository.
+
+
+## Example
+
+To test the HTML Image Renderer application, you can upload the "example.jpg" image provided in the "examples" folder. Click on the "Run" button to process the image and see the rendered HTML output.
+
+![example input](examples\example.jpg)
+![example output](examples\example_out.jpg)
 
 ## Dependencies
 
