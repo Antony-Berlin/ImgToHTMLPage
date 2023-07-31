@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: lightgray;
+  margin: 1.8cm;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App {
+      max-width: auto;
+      margin:  auto;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App h1 {
+      font-size: 3rem;
+      margin: 4rem 0 0 0;
+      align-items: center;
+      justify-content: center;
   }
+  
+  .App p {
+      color: #1a1a11;
+      font-size: 1.5rem;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .input-wrapper{
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .input-wrapper label {
+    width: 120px;
+    height: 20px;
+      display: inline-block;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: grey;
+      color: white;
+  }
+  
+  .input-wrapper input[type="file"]{
+      position: absolute;
+      left: 26px;
+      top: 6px;
+      z-index: -1;
+      font-size: 15px;
+      color: #1a1a11;
+  }
+  .input-wrapper input[type="button"]{
+    position: absolute;
+    left: 26px;
+    top: 6px;
+    z-index: -1;
+    font-size: 15px;
+    color: #1a1a11;
 }
+  .input-wrapper .buttn{
+    position: absolute;
+      left: 26px;
+      top: 6px;
+      z-index: -1;
+      font-size: 15px;
+      color: #1a1a11;
+  }
+  
+  .result {
+      display: grid;
+      align-items: center;
+      margin-top: 4rem;
+      
+      justify-content: center;
+  }
+  
+  .result .box-image{
+      background: grey;
+      height: 100%;
+      width: 100%;
+      padding: 2rem;
+      border-radius: .3cm .3cm 0 0;
+  }
+
+  .result .image-box{
+    max-width: 40vw; /* Limit the container to half of the viewport width */
+      max-height: 50vh; /* Limit the container to half of the viewport height */
+      overflow: hidden; /* Hide any overflowing parts of the image */
+      /* padding: 2rem; */
+      /* Center the image within the container */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .result .box-p{
+      background: white;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      margin-right: 2cm;
+      border-radius: .3cm .3cm .3cm .3cm;;
+      
+  }
+  
+  .result .img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: scroll;
+    border-radius: .3cm;
+  }
+  .result .p{
+      line-height: 1.5rem;
+      font-size: 1rem;
+  }
+  
+  @media (min-width: 1000px){
+      .result{
+          grid-template-columns: 1fr 1fr;
+      }
+      .result .box-p{
+        width: 90%;
+        border-radius: 0 .3cm .3cm 0;
+      }
+      .result .box-image{
+        border-radius: .3cm 0 0 .3cm ;
+      }
+  }
